@@ -1,6 +1,7 @@
 from rembg import remove
 
-input_path = '/home/ilmir/cup.jpeg'
+file_name = input()
+input_path = f'/home/ilmir/{file_name}'
 output_path = '/home/ilmir/Pictures/cup.png'
 
 with open(input_path,'rb') as i:

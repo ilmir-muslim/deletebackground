@@ -2,8 +2,8 @@ from rembg import remove
 import os
 from tqdm import tqdm
 
-directory = input('type the path to your folder: ')
-output_directory = input('type the path you want to save a new files: ')
+directory = input('введите путь к папке в которой фотографии: ')
+output_directory = input('введите путь к папке в которую хотите сохранить измененные фотографии: ')
 for filename in tqdm(os.listdir(directory), desc='processing...'):
 
     name = filename.replace('.jpg','.png')
